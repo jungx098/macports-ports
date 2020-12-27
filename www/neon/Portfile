@@ -39,7 +39,8 @@ patchfiles      libressl.patch
 configure.args  --with-ssl \
                 --enable-shared \
                 --with-expat \
-                --with-libproxy
+                --with-libproxy \
+                CFLAGS="-Wno-error=all"
 
 pre-test {
     set x {}
